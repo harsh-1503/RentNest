@@ -14,7 +14,7 @@ export default function ProfilePage() {
   }
 
   async function logout() {
-    await axios.post('http://localhost:4000/api/logout');
+    await axios.post('https://myairbnb-baxd.onrender.com/api/logout');
     setRedirect('/');
     setUser(null);
   }

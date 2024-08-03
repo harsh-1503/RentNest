@@ -9,7 +9,7 @@ export function UserContextProvider({children}) {
   const [ready,setReady] = useState(false);
   useEffect(() => {
     if (!user) {
-      axios.get('http://localhost:4000/api/profile').then(({data}) => {
+      axios.get('https://myairbnb-baxd.onrender.com/api/profile').then(({data}) => {
         setUser(data);
         setReady(true);
       });
